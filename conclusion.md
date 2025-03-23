@@ -96,7 +96,7 @@ public class InvalidLoanAmountException extends BaseLoanException {
 - Logging: Logging could be implemented at the appropriate levels within the controller and the global exception handler. Logging can provide insights into the flow of requests and errors, which is invaluable for debugging and monitoring.
 - Package naming: Though it doesn't matter that much but the base packagename could omit `taltech` from the base package name as the service is not specific to TalTech.
 - Lack of a Private Constructor in DecisionEngineConstants: The [DecisionEngineConstants.java](src/main/java/ee/taltech/inbankbackend/config/DecisionEngineConstants.java) file should have a private constructor to prevent instantiation of the class. This is a best practice to enforce the principle of encapsulation, which is a fundamental concept of object-oriented programming.
-
+- Incorrect Value for MAXIMUM_LOAN_PERIOD in [DecisionEngineConstants.java](src/main/java/ee/taltech/inbankbackend/config/DecisionEngineConstants.java): The constant for the maximum loan period is currently set to 60 months, but it should be 48 months.
 ```java
 package ee.taltech.inbankbackend.config;
 

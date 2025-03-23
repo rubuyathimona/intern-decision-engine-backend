@@ -22,7 +22,7 @@ public class DecisionEngine {
   /**
    * Calculates the maximum loan amount and period for the customer based on their ID code,
    * the requested loan amount and the loan period.
-   * The loan period must be between 12 and 60 months (inclusive).
+   * The loan period must be between 12 and 48 months (inclusive).
    * The loan amount must be between 2000 and 10000€ months (inclusive).
    *
    * @param personalCode ID code of the customer that made the request.
